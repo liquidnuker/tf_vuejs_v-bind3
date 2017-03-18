@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+    .static {
+    background-color: #666;
+    }
+    .active {
+    background-color: #ccc;
+    }
+    .text-danger {
+      color: #cc0000;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="static"
+        v-bind:class="{ active: isActive, 'text-danger': hasError }">zzzz
+      </div>
+    </div>  
+    
+    <script src="src/js/vendor/vue.min.js"></script>
+    <script src="src/vue-trigger.js"></script>
+  </body>
+</html>
